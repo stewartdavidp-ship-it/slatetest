@@ -1,0 +1,53 @@
+Slate PWA v1.0.2 Release Notes
+===============================
+Released: January 22, 2026
+
+ABOUT SLATE:
+------------
+Daily word puzzle on a chalkboard. Find all the hidden words
+in an 8x5 grid. Classic classroom aesthetic meets modern word game.
+
+PWA FEATURES (NEW):
+-------------------
+- Installable as standalone app on iOS/Android/Desktop
+- Works offline after first load
+- Auto-updates when new version available
+- Install banner with iOS Safari instructions
+- Detects iOS vs Android and shows appropriate install steps
+- Banner dismisses for 24 hours when closed
+- Service worker caches game for instant loading
+
+GAME FEATURES:
+--------------
+- 8x5 letter grid with hidden words
+- New puzzle every day at midnight
+- Chalkboard visual theme
+- Dark mode by default
+- Share results with emoji grid
+- Game Shelf integration via GS badge
+
+DEPLOYMENT:
+-----------
+Upload to web server root (HTTPS required):
+  /index.html
+  /manifest.json  
+  /sw.js
+  /icons/icon-*.png (all sizes)
+
+THEME COLORS:
+-------------
+- Background: #1a3a2a (dark green chalkboard)
+- Secondary: #2a4a3a (lighter green)
+- Frame: #6d5d45 (wood brown)
+- Text: #e8e6e3 (chalk white)
+
+GAME SHELF COMPATIBILITY:
+-------------------------
+- Share text format: "Slate #[day] [emoji grid]"
+- GS badge links to gameshelf.app
+- localStorage keys preserved for sync
+
+VERSION HISTORY:
+----------------
+v1.0.2 - PWA support added
+v1.0.1 - Initial release with GS integration
