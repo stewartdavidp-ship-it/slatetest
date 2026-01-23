@@ -1,4 +1,17 @@
-Slate v1.0.3 - PWA Path Fix
-===========================
-Fixed 404 errors when opening as PWA on GitHub Pages.
-Changed absolute paths (/) to relative paths (./) in manifest.json and sw.js.
+Slate v1.0.4
+============
+Release Date: January 23, 2025
+
+TUTORIAL SKIP FIX
+-----------------
+Fixed issue where declining the tutorial ("No, I've played before") 
+still showed the game overview/intro screen.
+
+Now when user says they've played before:
+- Tutorial is marked complete
+- Intro screen is NOT shown
+- "Show intro on start" setting is disabled
+- User goes directly to the game
+
+Users can always re-enable "Show intro on start" in the menu settings
+if they want to see it in the future.
