@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="version" content="1.0.9">
+    <meta name="version" content="1.0.11">
     <title>Slate - Daily Word Challenge</title>
     
     <!-- PWA Support -->
@@ -2165,7 +2165,7 @@
             <!-- 7. GAME INFO -->
             <h3>ℹ️ Game Info</h3>
             <p><strong>Puzzle:</strong> <span id="puzzle-date">Daily</span></p>
-            <p><strong>Version:</strong> v1.0.9</p>
+            <p><strong>Version:</strong> v1.0.11</p>
             <p style="font-size: 0.85rem; color: #a8b896; margin-top: 8px;">A daily word puzzle game. New words every day at midnight!</p>
             
             <!-- 8. DATA -->
@@ -2270,10 +2270,10 @@
     </div>
 
     <script>
-        // ============ GAME SHELF INTEGRATION MODULE v1.0.9 ============
+        // ============ GAME SHELF INTEGRATION MODULE v1.0.11 ============
         (function() {
             'use strict';
-            const GAMESHELF_VERSION = '1.0.9';
+            const GAMESHELF_VERSION = '1.0.11';
             if (window.GameShelfIntegration) return;
             
             window.GameShelfIntegration = {
@@ -2289,7 +2289,7 @@
                         name: config.name || gameId,
                         icon: config.icon || '🎮',
                         url: config.url || window.location.hostname,
-                        version: config.version || '1.0.9',
+                        version: config.version || '1.0.11',
                         type: config.type || 'daily',
                         ...config
                     };
@@ -3490,6 +3490,7 @@
             // Also disable intro on start since they're experienced
             showIntroOnStart = false;
             localStorage.setItem('slateShowIntro', 'false');
+            skipIntroAfterTutorial = true; // Extra safeguard to prevent intro
         }
         
         function completeTutorial() {
@@ -4517,7 +4518,7 @@ slate.game`;
             name: 'Slate',
             icon: '🪨',
             url: 'slate.game',
-            version: '1.0.9',
+            version: '1.0.11',
             type: 'daily'
         });
 

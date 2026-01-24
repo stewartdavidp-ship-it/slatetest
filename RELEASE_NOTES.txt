@@ -1,13 +1,9 @@
-Slate v1.0.8
-============
-Release Date: January 23, 2025
+Slate v1.0.11
+=============
+Release Date: January 24, 2026
 
-PWA SAFE AREA SUPPORT
----------------------
-Added iOS safe area inset support for PWA mode:
-- Body respects notch/Dynamic Island spacing
-- Content doesn't get hidden behind system UI
-- Better experience on modern iPhones
-
-This ensures the game displays properly when installed
-as a PWA on devices with notches or Dynamic Island.
+FIX: "I KNOW THE RULES" FLOW
+----------------------------
+- Added extra safeguard to prevent "How to Play" intro from 
+  appearing after clicking "I know the rules"
+- skipIntroAfterTutorial flag now set during skip flow
